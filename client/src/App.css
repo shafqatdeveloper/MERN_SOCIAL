@@ -1,0 +1,142 @@
+#photo,
+#video {
+  display: none;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../src/fonts/Helvetica-Font/Helvetica.ttf");
+}
+@font-face {
+  font-family: "instagram-new";
+  src: url("../src/fonts/instagram-new/Demo_Fonts/Fontspring-DEMO-blue_vinyl_bold_ps_ot.otf");
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #6157ff;
+}
+
+.sender-message {
+  background-color: orange;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+.reciever-message {
+  background-color: rgb(0, 119, 255);
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  align-self: flex-end;
+}
+
+label {
+  display: inline-block;
+  padding: 12px 50px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.active {
+  color: #ee49fd;
+  font-weight: bold;
+}
+
+/* .active {
+  background-image: linear-gradient(to right, #ff0000, #00ff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  width: 10px;
+}
+.center-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+body {
+  background: linear-gradient(to right, #b4dfff, #d8b4ff);
+}
+.center-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  /****** center box
+	width: 300px;
+	height: 300px;
+	border: solid 1px #aaa;
+	******/
+}
+body {
+  background-color: #202628;
+}
+.loader-circle-6 {
+  animation: loader-circle-6-spin 1s linear infinite;
+  border: solid 5px #bbb;
+  border-top: solid 5px transparent;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+}
+@keyframes loader-circle-6-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animateC {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.text-gradient {
+  background-image: linear-gradient(to right, #6157ff, #ee49fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.custom-input::placeholder {
+  color: #545151;
+  font-size: 16px;
+}
