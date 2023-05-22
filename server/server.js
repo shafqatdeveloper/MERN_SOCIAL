@@ -14,9 +14,7 @@ const app = express();
 
 // Configuring DOTENV
 
-if (process.env.NODE_ENV !== "production") {
-  dotenv.config({ path: "../server/Config/config.env" });
-}
+dotenv.config({ path: "../server/Config/config.env" });
 
 // Configuring Cookie-Parser
 app.use(cookieParser());
