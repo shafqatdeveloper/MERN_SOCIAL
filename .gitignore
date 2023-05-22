@@ -2,3 +2,16 @@
 /server/Config/config.env
 /server/node_modules
 /node_modules
+/Socket/node_modules
+/server/Config/config.env
+/client/node_modules
+/client/src
+/client/.babelrc.cjs
+/client/.eslintrc.cjs
+/client/index.html
+/client/package-lock.json
+/client/package.json
+/client/postcss.config.js
+/client/tailwind.config.js
+/client/vite.config.js
+/client/webpack.config.js
