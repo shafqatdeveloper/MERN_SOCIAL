@@ -21,37 +21,13 @@ app.use(cookieParser());
 app.use(bodyParser.json({ limit: "50mb" }));
 app.use(bodyParser.urlencoded({ extended: true }));
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "http://localhost:5000",
+  "https://*.onrender.com",
+];
 // Using CORS
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      // Perform any necessary validation or checks on the origin
-      if (!origin) {
-        // If the origin is not provided, allow the request
-        callback(null, true);
-        return;
-      }
-
-      // List of allowed origins
-      const allowedOrigins = [
-        "http://localhost:5173",
-        "http://localhost:5000",
-        "https://*.onrender.com",
-      ];
-
-      // Check if the requesting origin is in the allowed origins list
-      if (allowedOrigins.includes(origin)) {
-        // Allow the request with the specific origin
-        callback(null, origin);
-      } else {
-        // Reject the request
-        const error = new Error("Not allowed by CORS");
-        callback(error);
-      }
-    },
-    credentials: true,
-  })
-);
+app.use(cors({ orgin: allowedOrigins, withCredentials: true }));
 
 const __filename = fileURLToPath(import.meta.url);
 // Get the directory path
