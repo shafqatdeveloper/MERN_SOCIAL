@@ -67,7 +67,10 @@ userSchema.pre("save", async function (next) {
 
 // Generating JSON Web Token
 userSchema.methods.JWTTOKEN = function () {
-  return jwt.sign({ id: this._id }, process.env.JWT_SECRET);
+  return jwt.sign(
+    { id: this._id },
+    "IOWEWERJWRISDFBWEIRUHEBRWEUR39RRENRII04RI34NFIU3"
+  );
 };
 
 // Comparing Password
