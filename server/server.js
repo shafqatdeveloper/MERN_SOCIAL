@@ -14,8 +14,6 @@ const app = express();
 
 // Configuring DOTENV
 
-dotenv.config({ path: "../server/Config/config.env" });
-
 // Configuring Cookie-Parser
 app.use(cookieParser());
 
@@ -26,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Using CORS
 app.use(
   cors({
-    origin: "http://localhost:5000",
+    origin: "*",
     withCredentials: true,
   })
 );
