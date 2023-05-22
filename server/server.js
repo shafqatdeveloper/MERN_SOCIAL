@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Using CORS
 app.use(
   cors({
-    origin: "*",
+    origin: "http://localhost:5173",
     credentials: true,
   })
 );
