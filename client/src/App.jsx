@@ -345,7 +345,7 @@ const App = () => {
         )}
         <Route path="/loginsignup" element={<LoginSignup />} />
         <Route path="/user/password/reset/:token" element={<ResetPassword />} />
-        <Route path="/*" element={<Page404 />} />
+        {/* <Route path="/*" element={<Page404 />} /> */}
       </Routes>
     </BrowserRouter>
   );
