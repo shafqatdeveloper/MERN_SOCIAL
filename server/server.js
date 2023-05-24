@@ -13,6 +13,7 @@ import path, { dirname, join } from "path";
 const app = express();
 
 // Configuring DOTENV
+dotenv.config({ path: "../server/Config/config.env" });
 
 // Configuring Cookie-Parser
 app.use(cookieParser());
@@ -52,6 +53,6 @@ app.get("*", (req, res) => {
 });
 
 // Listening App
-app.listen(5000, () => {
-  console.log(`App is Running on PORT : 5000`);
+app.listen(process.env.PORT, () => {
+  console.log(`App is Running on PORT : ${process.env.PORT}`);
 });

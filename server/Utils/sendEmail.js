@@ -6,8 +6,8 @@ const sendEmail = async (options) => {
     host: "smtp.gmail.com",
     port: 465,
     auth: {
-      user: "testmail03000293355@gmail.com",
-      pass: "yyitqixhbbelcfuz",
+      user: process.env.NODEMAILER_MAIL,
+      pass: process.env.NODEMAILER_PASSWORD,
     },
   });
   const mailOptions = {

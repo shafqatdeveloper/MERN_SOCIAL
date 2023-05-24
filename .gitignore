@@ -2,6 +2,7 @@
 /server/node_modules
 /node_modules
 /Socket/node_modules
+/Socket/config.env
 /client/node_modules
 /client/src
 /client/.babelrc.cjs

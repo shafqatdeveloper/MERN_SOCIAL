@@ -1,10 +1,12 @@
-const io = require("socket.io")(8800, {
+const dotenv = require("dotenv");
+
+dotenv.config({ path: "../Socket/config.env" });
+
+const io = require("socket.io")(process.env.PORT, {
   cors: {
     origin: "http://localhost:5173",
   },
 });
-
-console.log("Socket connection");
 
 let activeUsers = [];
 io.on("connection", (socket) => {
