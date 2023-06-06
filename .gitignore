@@ -1,6 +1,8 @@
 /client/node_modules
 /server/node_modules
 /server/Config/config.env
+server/Config/config.env
+../server/Config/config.env
 /node_modules
 /Socket/node_modules
 /Socket/config.env
@@ -15,3 +17,4 @@
 /client/tailwind.config.js
 /client/vite.config.js
 /client/webpack.config.js
+/node_modules
