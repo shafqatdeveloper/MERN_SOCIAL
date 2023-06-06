@@ -1,9 +1,7 @@
 /client/node_modules
 /server/node_modules
 /server/Config/config.env
-server/Config/config.env
-../server/Config/config.env
-/server/Config/Database.js
+server/Config
 /node_modules
 /Socket/node_modules
 /Socket/config.env
